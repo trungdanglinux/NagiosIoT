@@ -5,5 +5,9 @@ From Adafruit:
    - setup.py needs to be set up to run extension from code in C as well as  run the Adafruit library globally
    - import Adafruit lirary and lcd_i2c library in TempHud.py
  For Nagios, the Nagios and Nagios plugins are downloaded and installed. There are three main parts in Nagios: Host, Command and Service.
- We define host, Command and service
+ We define command in command.cgf 
+ define command { 
+    command_name   show-temp-humid
+    command_line   /home/pi/Documents/tempHud.py 22 4
+}
  
