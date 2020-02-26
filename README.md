@@ -4,7 +4,10 @@ This project combine two libraries from Adafruit and lcd_i2c:
    - setup.py needs to be set up to run extension from code in C as well as  run the Adafruit library globally
    - import Adafruit lirary and lcd_i2c library in TempHud.py.
 
-For Nagios, the Nagios and Nagios plugins are downloaded and installed. There are three main parts in Nagios: Host, Command and Service.
+For Nagios, the Nagios and Nagios plugins are downloaded and installed.
+wget https://assets.nagios.com/downloads/nagioscore/releases/nagios-4.4.5.tar.gz
+wget http://nagios-plugins.org/download/nagios-plugins-2.3.2.tar.gz
+There are three main parts in Nagios: Host, Command and Service.
  We define command in commands.cfg.
  define command { 
     command_name   show-temp-humid
